@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Sign Up</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        padding: 30px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        display: inline-block;
+        padding: 15px;
+        margin: 5px 0px 24px 0px;
+        border: none;
+        background-color: #f1f1f1;
+        outline: none;
+      }
+      input[type="text"]:focus,
+      input[type="password"]:focus {
+        background-color: #e2dcdc;
+      }
+
+      hr {
+        margin-bottom: 29px;
+        border: 1px solid #f1f1f1;
+      }
+      button {
+        background-color: #18bb80;
+
+        margin: 8px 0;
+
+        cursor: pointer;
+
+        opacity: 0.9;
+        display: inline-block;
+      }
+      button:hover {
+        opacity: 1;
+      }
+      .cancel,
+      .signup {
+        float: left;
+        width: 50%;
+        padding: 13px;
+        color: white;
+        border: none;
+      }
+      .cancel {
+        background-color: #e14608;
+      }
+
+      @media screen and (max-width: 600px) {
+        .cancel,
+        .signup {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/action_page.php">
+      <div class="parent">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr />
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" name="Email" placeholder="Enter Email" required />
+        <label for="password"><b>Password</b></label>
+        <input
+          type="password"
+          name="Password"
+          placeholder="Enter Password"
+          required
+        />
+        <label for="rpt psw"> <b>Repeat Password</b></label>
+        <input
+          type="password"
+          name="Repeat Password"
+          placeholder=" Repeat Password"
+          required
+        />
+        <input id="checkbox" type="checkbox" />
+        <label for="checkbox"> Remember me</label>
+
+        <p style="margin-bottom: 20px" ;>
+          By creating an account you agree to out
+          <a href="url"> Terms & Privacy</a>
+        </p>
+
+        <div class="clickbox">
+          <button type="button" class="cancel">Cancel</button>
+          <button type="submit" class="signup">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
