@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Sign Up</title>
+    <title>HTS - TASK 1</title>
     <style>
       body {
         font-family: Arial, Helvetica, sans-serif;
@@ -46,16 +46,23 @@
       button:hover {
         opacity: 1;
       }
-      .cancel,
-      .signup {
+
+      .button {
         float: left;
         width: 50%;
         padding: 13px;
         color: white;
         border: none;
       }
-      .cancel {
+
+      #cancel {
         background-color: #e14608;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .button {
+          width: 100%;
+        }
       }
     </style>
   </head>
@@ -85,14 +92,14 @@
         <input id="checkbox" type="checkbox" />
         <label for="checkbox"> Remember me</label>
 
-        <p style="margin-bottom: 20px" ;>
+        <p style="padding: 10px" ;>
           By creating an account you agree to out
           <a href="url"> Terms & Privacy</a>
         </p>
 
-        <div class="clickbox">
-          <button type="button" class="cancel">Cancel</button>
-          <button type="submit" class="signup">Sign Up</button>
+        <div>
+          <button type="button" id="cancel" class="button">Cancel</button>
+          <button type="submit" id="signup" class="button">Sign Up</button>
         </div>
       </div>
     </form>
